@@ -139,7 +139,7 @@ This is an example of how to list things you need to use the software and how to
 ![add_recipe](./gifs/video.gif)
 
 
-_For more detail, please refer to the [Design Documentation][/Design_doc.pdf]
+_For more detail, please refer to the [Design Documentation](https://github.com/pt4300/gamedb/blob/main/Design_doc.pdf)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
