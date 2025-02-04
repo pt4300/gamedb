@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A85EB557265BCFC4001F7587 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB556265BCFC4001F7587 /* LogInViewController.swift */; };
+		A85EB559265BD9B0001F7587 /* personalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB558265BD9B0001F7587 /* personalViewController.swift */; };
+		A85EB55F265BEEE0001F7587 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB55E265BEEE0001F7587 /* GameDetailViewController.swift */; };
+		A86584C4263D6DA600206348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584C3263D6DA600206348 /* AppDelegate.swift */; };
+		A86584C6263D6DA600206348 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584C5263D6DA600206348 /* SceneDelegate.swift */; };
+		A86584CB263D6DA600206348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86584C9263D6DA600206348 /* Main.storyboard */; };
+		A86584CD263D6DA700206348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A86584CC263D6DA700206348 /* Assets.xcassets */; };
+		A86584D0263D6DA700206348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86584CE263D6DA700206348 /* LaunchScreen.storyboard */; };
+		A86584D9263D6E6E00206348 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584D8263D6E6E00206348 /* NewsTableViewController.swift */; };
+		A86584DE263D6F6800206348 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584DD263D6F6800206348 /* NewsData.swift */; };
+		A86584E0263D79CE00206348 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584DF263D79CE00206348 /* NewsDetailViewController.swift */; };
+		A86584E2263E912200206348 /* newsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584E1263E912200206348 /* newsTableViewCell.swift */; };
+		A86584E4263EA32700206348 /* ReviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584E3263EA32700206348 /* ReviewData.swift */; };
+		A86584E6263F87CC00206348 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584E5263F87CC00206348 /* GameData.swift */; };
+		A86584E8263F8DA200206348 /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584E7263F8DA200206348 /* GamesTableViewController.swift */; };
+		A86584EA263F8F2F00206348 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86584E9263F8F2F00206348 /* GamesTableViewCell.swift */; };
+		A8B4592E267225EB00B1B2E9 /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4592D267225EB00B1B2E9 /* ApiProtocol.swift */; };
+		A8B4593226722A0100B1B2E9 /* ApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4593126722A0100B1B2E9 /* ApiController.swift */; };
+		A8B4593426730E3600B1B2E9 /* wishlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4593326730E3600B1B2E9 /* wishlistTableViewController.swift */; };
+		A8B4593626732B1300B1B2E9 /* videoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4593526732B1300B1B2E9 /* videoTableViewCell.swift */; };
+		A8B4593826732C2100B1B2E9 /* videoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B4593726732C2100B1B2E9 /* videoTableViewController.swift */; };
+		A8B4593A2673480500B1B2E9 /* searchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B459392673480500B1B2E9 /* searchTableViewController.swift */; };
+		A8D452EB264004610093B164 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A8D452EA264004610093B164 /* FirebaseFirestore */; };
+		A8D452ED264004610093B164 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A8D452EC264004610093B164 /* FirebaseDatabase */; };
+		A8D452EF264004610093B164 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A8D452EE264004610093B164 /* FirebaseFirestoreSwift-Beta */; };
+		A8D452F1264004610093B164 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A8D452F0264004610093B164 /* FirebaseAnalyticsSwift-Beta */; };
+		A8D452F3264004610093B164 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A8D452F2264004610093B164 /* FirebaseAnalytics */; };
+		A8D452F5264004610093B164 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A8D452F4264004610093B164 /* FirebaseStorageSwift-Beta */; };
+		A8D452F7264004610093B164 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A8D452F6264004610093B164 /* FirebaseStorage */; };
+		A8D452F9264004610093B164 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A8D452F8264004610093B164 /* FirebaseAuth */; };
+		A8D452FB2640053F0093B164 /* myFavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D452FA2640053F0093B164 /* myFavoriteTableViewController.swift */; };
+		A8D452FD26400B670093B164 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D452FC26400B670093B164 /* GoogleService-Info.plist */; };
+		A8D4530026400C8E0093B164 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D452FF26400C8E0093B164 /* MulticastDelegate.swift */; };
+		A8D4530426400CD00093B164 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D4530326400CD00093B164 /* DatabaseProtocol.swift */; };
+		A8D4530626400DEC0093B164 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D4530526400DEC0093B164 /* FirebaseController.swift */; };
+		DA78D9BC1D4F22610C154F31 /* Pods_GameDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D875238A507A486A013D2FAE /* Pods_GameDB.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A85EB556265BCFC4001F7587 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		A85EB558265BD9B0001F7587 /* personalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalViewController.swift; sourceTree = "<group>"; };
+		A85EB55E265BEEE0001F7587 /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
+		A86584C0263D6DA600206348 /* GameDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86584C3263D6DA600206348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A86584C5263D6DA600206348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A86584CA263D6DA600206348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A86584CC263D6DA700206348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A86584CF263D6DA700206348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A86584D1263D6DA700206348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A86584D8263D6E6E00206348 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		A86584DD263D6F6800206348 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		A86584DF263D79CE00206348 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		A86584E1263E912200206348 /* newsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsTableViewCell.swift; sourceTree = "<group>"; };
+		A86584E3263EA32700206348 /* ReviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewData.swift; sourceTree = "<group>"; };
+		A86584E5263F87CC00206348 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		A86584E7263F8DA200206348 /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
+		A86584E9263F8F2F00206348 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
+		A8B4592D267225EB00B1B2E9 /* ApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
+		A8B4593126722A0100B1B2E9 /* ApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiController.swift; sourceTree = "<group>"; };
+		A8B4593326730E3600B1B2E9 /* wishlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishlistTableViewController.swift; sourceTree = "<group>"; };
+		A8B4593526732B1300B1B2E9 /* videoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTableViewCell.swift; sourceTree = "<group>"; };
+		A8B4593726732C2100B1B2E9 /* videoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTableViewController.swift; sourceTree = "<group>"; };
+		A8B459392673480500B1B2E9 /* searchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTableViewController.swift; sourceTree = "<group>"; };
+		A8D452FA2640053F0093B164 /* myFavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFavoriteTableViewController.swift; sourceTree = "<group>"; };
+		A8D452FC26400B670093B164 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8D452FF26400C8E0093B164 /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		A8D4530326400CD00093B164 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
+		A8D4530526400DEC0093B164 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		C20AAC2A640A3A8F91BB92A0 /* Pods-GameDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameDB.debug.xcconfig"; path = "Target Support Files/Pods-GameDB/Pods-GameDB.debug.xcconfig"; sourceTree = "<group>"; };
+		D875238A507A486A013D2FAE /* Pods_GameDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3AF77395BA905090E4BF16 /* Pods-GameDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameDB.release.xcconfig"; path = "Target Support Files/Pods-GameDB/Pods-GameDB.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A86584BD263D6DA600206348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D452EF264004610093B164 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				A8D452ED264004610093B164 /* FirebaseDatabase in Frameworks */,
+				A8D452F1264004610093B164 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				A8D452F3264004610093B164 /* FirebaseAnalytics in Frameworks */,
+				A8D452F7264004610093B164 /* FirebaseStorage in Frameworks */,
+				A8D452EB264004610093B164 /* FirebaseFirestore in Frameworks */,
+				A8D452F5264004610093B164 /* FirebaseStorageSwift-Beta in Frameworks */,
+				A8D452F9264004610093B164 /* FirebaseAuth in Frameworks */,
+				DA78D9BC1D4F22610C154F31 /* Pods_GameDB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E3AF3A1F48096E454C4FED8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C20AAC2A640A3A8F91BB92A0 /* Pods-GameDB.debug.xcconfig */,
+				EA3AF77395BA905090E4BF16 /* Pods-GameDB.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8EFFEEAFBEAF9FFD8155A87E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D875238A507A486A013D2FAE /* Pods_GameDB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A86584B7263D6DA600206348 = {
+			isa = PBXGroup;
+			children = (
+				A86584C2263D6DA600206348 /* GameDB */,
+				A86584C1263D6DA600206348 /* Products */,
+				3E3AF3A1F48096E454C4FED8 /* Pods */,
+				8EFFEEAFBEAF9FFD8155A87E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A86584C1263D6DA600206348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A86584C0263D6DA600206348 /* GameDB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A86584C2263D6DA600206348 /* GameDB */ = {
+			isa = PBXGroup;
+			children = (
+				A8B4592C267225D500B1B2E9 /* ApiWrapper */,
+				A8D452FE26400BED0093B164 /* DataModel */,
+				A86584DC263D6F5800206348 /* Data */,
+				A86584D7263D6E5E00206348 /* ViewController */,
+				A86584C3263D6DA600206348 /* AppDelegate.swift */,
+				A8D452FC26400B670093B164 /* GoogleService-Info.plist */,
+				A86584C5263D6DA600206348 /* SceneDelegate.swift */,
+				A86584C9263D6DA600206348 /* Main.storyboard */,
+				A86584CC263D6DA700206348 /* Assets.xcassets */,
+				A86584CE263D6DA700206348 /* LaunchScreen.storyboard */,
+				A86584D1263D6DA700206348 /* Info.plist */,
+			);
+			path = GameDB;
+			sourceTree = "<group>";
+		};
+		A86584D7263D6E5E00206348 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A86584D8263D6E6E00206348 /* NewsTableViewController.swift */,
+				A86584DF263D79CE00206348 /* NewsDetailViewController.swift */,
+				A86584E1263E912200206348 /* newsTableViewCell.swift */,
+				A86584E7263F8DA200206348 /* GamesTableViewController.swift */,
+				A86584E9263F8F2F00206348 /* GamesTableViewCell.swift */,
+				A8D452FA2640053F0093B164 /* myFavoriteTableViewController.swift */,
+				A85EB556265BCFC4001F7587 /* LogInViewController.swift */,
+				A85EB558265BD9B0001F7587 /* personalViewController.swift */,
+				A85EB55E265BEEE0001F7587 /* GameDetailViewController.swift */,
+				A8B4593326730E3600B1B2E9 /* wishlistTableViewController.swift */,
+				A8B4593526732B1300B1B2E9 /* videoTableViewCell.swift */,
+				A8B4593726732C2100B1B2E9 /* videoTableViewController.swift */,
+				A8B459392673480500B1B2E9 /* searchTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A86584DC263D6F5800206348 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A86584DD263D6F6800206348 /* NewsData.swift */,
+				A86584E3263EA32700206348 /* ReviewData.swift */,
+				A86584E5263F87CC00206348 /* GameData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A8B4592C267225D500B1B2E9 /* ApiWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				A8B4592D267225EB00B1B2E9 /* ApiProtocol.swift */,
+				A8B4593126722A0100B1B2E9 /* ApiController.swift */,
+			);
+			path = ApiWrapper;
+			sourceTree = "<group>";
+		};
+		A8D452FE26400BED0093B164 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8D452FF26400C8E0093B164 /* MulticastDelegate.swift */,
+				A8D4530326400CD00093B164 /* DatabaseProtocol.swift */,
+				A8D4530526400DEC0093B164 /* FirebaseController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A86584BF263D6DA600206348 /* GameDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A86584D4263D6DA700206348 /* Build configuration list for PBXNativeTarget "GameDB" */;
+			buildPhases = (
+				9477158C28C9178821D5FB9B /* [CP] Check Pods Manifest.lock */,
+				A86584BC263D6DA600206348 /* Sources */,
+				A86584BD263D6DA600206348 /* Frameworks */,
+				A86584BE263D6DA600206348 /* Resources */,
+				340B3BD121E0A613FDFEAADC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameDB;
+			packageProductDependencies = (
+				A8D452EA264004610093B164 /* FirebaseFirestore */,
+				A8D452EC264004610093B164 /* FirebaseDatabase */,
+				A8D452EE264004610093B164 /* FirebaseFirestoreSwift-Beta */,
+				A8D452F0264004610093B164 /* FirebaseAnalyticsSwift-Beta */,
+				A8D452F2264004610093B164 /* FirebaseAnalytics */,
+				A8D452F4264004610093B164 /* FirebaseStorageSwift-Beta */,
+				A8D452F6264004610093B164 /* FirebaseStorage */,
+				A8D452F8264004610093B164 /* FirebaseAuth */,
+			);
+			productName = GameDB;
+			productReference = A86584C0263D6DA600206348 /* GameDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A86584B8263D6DA600206348 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A86584BF263D6DA600206348 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = A86584BB263D6DA600206348 /* Build configuration list for PBXProject "GameDB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A86584B7263D6DA600206348;
+			packageReferences = (
+				A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = A86584C1263D6DA600206348 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A86584BF263D6DA600206348 /* GameDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A86584BE263D6DA600206348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A86584D0263D6DA700206348 /* LaunchScreen.storyboard in Resources */,
+				A8D452FD26400B670093B164 /* GoogleService-Info.plist in Resources */,
+				A86584CD263D6DA700206348 /* Assets.xcassets in Resources */,
+				A86584CB263D6DA600206348 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		340B3BD121E0A613FDFEAADC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameDB/Pods-GameDB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameDB/Pods-GameDB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameDB/Pods-GameDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9477158C28C9178821D5FB9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A86584BC263D6DA600206348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D4530626400DEC0093B164 /* FirebaseController.swift in Sources */,
+				A8B4593226722A0100B1B2E9 /* ApiController.swift in Sources */,
+				A86584E0263D79CE00206348 /* NewsDetailViewController.swift in Sources */,
+				A86584D9263D6E6E00206348 /* NewsTableViewController.swift in Sources */,
+				A85EB557265BCFC4001F7587 /* LogInViewController.swift in Sources */,
+				A85EB559265BD9B0001F7587 /* personalViewController.swift in Sources */,
+				A8D452FB2640053F0093B164 /* myFavoriteTableViewController.swift in Sources */,
+				A86584E8263F8DA200206348 /* GamesTableViewController.swift in Sources */,
+				A86584C4263D6DA600206348 /* AppDelegate.swift in Sources */,
+				A86584EA263F8F2F00206348 /* GamesTableViewCell.swift in Sources */,
+				A86584E2263E912200206348 /* newsTableViewCell.swift in Sources */,
+				A8B4592E267225EB00B1B2E9 /* ApiProtocol.swift in Sources */,
+				A8B4593426730E3600B1B2E9 /* wishlistTableViewController.swift in Sources */,
+				A8B4593826732C2100B1B2E9 /* videoTableViewController.swift in Sources */,
+				A8D4530026400C8E0093B164 /* MulticastDelegate.swift in Sources */,
+				A86584C6263D6DA600206348 /* SceneDelegate.swift in Sources */,
+				A86584DE263D6F6800206348 /* NewsData.swift in Sources */,
+				A86584E6263F87CC00206348 /* GameData.swift in Sources */,
+				A8B4593A2673480500B1B2E9 /* searchTableViewController.swift in Sources */,
+				A85EB55F265BEEE0001F7587 /* GameDetailViewController.swift in Sources */,
+				A86584E4263EA32700206348 /* ReviewData.swift in Sources */,
+				A8B4593626732B1300B1B2E9 /* videoTableViewCell.swift in Sources */,
+				A8D4530426400CD00093B164 /* DatabaseProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A86584C9263D6DA600206348 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A86584CA263D6DA600206348 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A86584CE263D6DA700206348 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A86584CF263D6DA700206348 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A86584D2263D6DA700206348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A86584D3263D6DA700206348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A86584D5263D6DA700206348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20AAC2A640A3A8F91BB92A0 /* Pods-GameDB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G89ZZ8JMX;
+				INFOPLIST_FILE = GameDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.monash.fit.GameDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A86584D6263D6DA700206348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA3AF77395BA905090E4BF16 /* Pods-GameDB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G89ZZ8JMX;
+				INFOPLIST_FILE = GameDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.monash.fit.GameDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A86584BB263D6DA600206348 /* Build configuration list for PBXProject "GameDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86584D2263D6DA700206348 /* Debug */,
+				A86584D3263D6DA700206348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A86584D4263D6DA700206348 /* Build configuration list for PBXNativeTarget "GameDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86584D5263D6DA700206348 /* Debug */,
+				A86584D6263D6DA700206348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8D452EA264004610093B164 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A8D452EC264004610093B164 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		A8D452EE264004610093B164 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		A8D452F0264004610093B164 /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		A8D452F2264004610093B164 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A8D452F4264004610093B164 /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		A8D452F6264004610093B164 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		A8D452F8264004610093B164 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8D452E9264004610093B164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A86584B8263D6DA600206348 /* Project object */;
+}
